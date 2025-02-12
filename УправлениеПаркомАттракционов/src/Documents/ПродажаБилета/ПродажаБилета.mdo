@@ -163,6 +163,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="8b45a266-a911-4b35-b25c-da9c4fd0f7a5">
+    <name>ЭтоЛьготныйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это льготный период</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="2477be09-d6de-46e2-986a-bad28ed1ad4b">
     <name>ФормаДокумента</name>
     <synonym>
