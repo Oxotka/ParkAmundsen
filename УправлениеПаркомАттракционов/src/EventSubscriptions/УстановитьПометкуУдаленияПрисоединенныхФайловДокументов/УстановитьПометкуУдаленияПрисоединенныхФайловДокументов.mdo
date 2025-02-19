@@ -8,6 +8,7 @@
   <source>
     <types>DocumentObject.ПродажаБилета</types>
     <types>DocumentObject.ГПА_РемонтыАттракционов</types>
+    <types>DocumentObject.Отсутствие</types>
   </source>
   <event>BeforeWrite</event>
   <handler>CommonModule.РаботаСФайлами.УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</handler>

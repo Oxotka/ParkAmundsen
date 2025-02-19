@@ -11,7 +11,10 @@
   </synonym>
   <type>
     <types>DocumentRef.ПосещениеАттракциона</types>
+    <types>DocumentRef.Отсутствие</types>
+    <types>DocumentRef.ПланированиеОтсутствия</types>
     <types>DocumentRef.ПродажаБилета</types>
   </type>
   <content>Document.ПосещениеАттракциона.Attribute.Основание</content>
+  <content>Document.Отсутствие.Attribute.Основание</content>
 </mdclass:FilterCriterion>

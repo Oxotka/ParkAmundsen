@@ -20,7 +20,7 @@
   <fullTextSearch>Use</fullTextSearch>
   <listPresentation>
     <key>ru</key>
-    <value>Список отсутствий</value>
+    <value>Запланированные отсутствия</value>
   </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
