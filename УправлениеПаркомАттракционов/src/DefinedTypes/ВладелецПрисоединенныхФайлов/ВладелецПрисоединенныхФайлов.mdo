@@ -9,8 +9,9 @@
     <value>Владелец присоединенных файлов</value>
   </synonym>
   <type>
+    <types>DocumentRef.Отсутствие</types>
     <types>CatalogRef.ПапкиФайлов</types>
-    <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
     <types>DocumentRef.ПродажаБилета</types>
+    <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
   </type>
 </mdclass:DefinedType>
