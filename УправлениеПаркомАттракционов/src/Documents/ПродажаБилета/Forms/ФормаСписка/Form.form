@@ -53,6 +53,63 @@
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
+      <name>ЕстьФайлы</name>
+      <id>34</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ЕстьФайлы</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <extendedTooltip>
+        <name>ЕстьФайлыРасширеннаяПодсказка</name>
+        <id>36</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ЕстьФайлыКонтекстноеМеню</name>
+        <id>35</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>PictureField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerPicture xsi:type="core:PictureRef">
+        <picture>CommonPicture.Скрепка</picture>
+      </headerPicture>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:ImageFieldExtInfo">
+        <width>1</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <valuesPicture xsi:type="core:PictureRef">
+          <picture>CommonPicture.КоллекцияСкрепка</picture>
+        </valuesPicture>
+        <fileDragMode>AsFileRef</fileDragMode>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>Номер</name>
       <id>16</id>
       <visible>true</visible>
@@ -293,7 +350,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>ЭтоЛьготныйПериод</name>
-      <id>34</id>
+      <id>37</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -304,7 +361,7 @@
       </dataPath>
       <extendedTooltip>
         <name>ЭтоЛьготныйПериодРасширеннаяПодсказка</name>
-        <id>36</id>
+        <id>39</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -314,7 +371,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>ЭтоЛьготныйПериодКонтекстноеМеню</name>
-        <id>35</id>
+        <id>38</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>CheckBoxField</type>
@@ -383,6 +440,10 @@
       </userVisible>
       <horizontalAlign>Left</horizontalAlign>
     </autoCommandBar>
+    <handlers>
+      <event>OnActivateRow</event>
+      <name>СписокПриАктивизацииСтроки</name>
+    </handlers>
     <searchStringAddition>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -416,7 +477,7 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <source>СписокСтрокаПоиска</source>
+      <source>Список</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -455,7 +516,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
-      <source>СписокСостояниеПросмотра</source>
+      <source>Список</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -494,7 +555,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
-      <source>СписокУправлениеПоиском</source>
+      <source>Список</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -572,6 +633,14 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>ОбработкаОповещения</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
@@ -597,24 +666,38 @@
     </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
-      <queryText>ВЫБРАТЬ 
+      <queryText> ВЫБРАТЬ 
        ПродажаБилета.Ссылка, 
        ПродажаБилета.ПометкаУдаления, 
        ПродажаБилета.Номер, 
        ПродажаБилета.Дата, 
        ПродажаБилета.Проведен, 
+       ПродажаБилета.УдалитьНоменклатура, 
        ПродажаБилета.Клиент, 
+       ПродажаБилета.УдалитьЦена, 
        ПродажаБилета.БаллыКСписанию, 
        ПродажаБилета.СуммаДокумента, 
        ПродажаБилета.Комментарий, 
-       ПродажаБилета.Ответственный,
-       
-       ПродажаБилета.ЭтоЛьготныйПериод
-      
+       ПродажаБилета.Ответственный, 
+       ПродажаБилета.ПозицииПродажи.*, 
+       ПродажаБилета.МоментВремени,
+       ПродажаБилета.ЭтоЛьготныйПериод,
+        ВЫБОР
+        КОГДА НаличиеФайлов.ЕстьФайлы ЕСТЬ NULL ТОГДА
+            0
+        КОГДА НаличиеФайлов.ЕстьФайлы ТОГДА
+            1
+        ИНАЧЕ
+            0
+    КОНЕЦ КАК ЕстьФайлы
  ИЗ 
-       Документ.ПродажаБилета
+       Документ.ПродажаБилета 
+        
  КАК 
-       ПродажаБилета</queryText>
+       ПродажаБилета
+       
+       ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
+        ПО ПродажаБилета.Ссылка = НаличиеФайлов.ОбъектСФайлами</queryText>
       <mainTable>Document.ПродажаБилета</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
