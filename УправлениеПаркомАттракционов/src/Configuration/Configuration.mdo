@@ -57,6 +57,7 @@
   <subsystems>Subsystem.ПодключаемыеОтчетыИОбработки</subsystems>
   <subsystems>Subsystem.Посещения</subsystems>
   <subsystems>Subsystem.Продажи</subsystems>
+  <subsystems>Subsystem.Ремонт</subsystems>
   <subsystems>Subsystem.Справочники</subsystems>
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
   <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
@@ -984,6 +985,7 @@
   <eventSubscriptions>EventSubscription.ОбновлениеВерсииДатЗапретаИзмененияПослеЗагрузкиДанных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ОбновлениеВерсииИБПередУдалениемСсылочногоОбъекта</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ОбработкаЗаполненияДокументов</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ОбработкаЗаполненияДокументовГПА</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ОбработкаПроверкиЗаполненияПрисоединенногоФайла</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ОтключитьРассылкиПередУдалениемТипаПолучателейРассылки</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПриОтправкеДанныхГлавному</eventSubscriptions>
@@ -1045,6 +1047,7 @@
   <functionalOptions>FunctionalOption.ОтложенноеОбновлениеВГлавномУзлеЗавершеноУспешно</functionalOptions>
   <functionalOptions>FunctionalOption.ОтложенноеОбновлениеЗавершеноУспешно</functionalOptions>
   <functionalOptions>FunctionalOption.ПоказыватьОтветственных</functionalOptions>
+  <functionalOptions>FunctionalOption.ПоказыватьОтветственныхГПА</functionalOptions>
   <functionalOptions>FunctionalOption.РаботаВЛокальномРежиме</functionalOptions>
   <functionalOptions>FunctionalOption.РаботаВМоделиСервиса</functionalOptions>
   <functionalOptions>FunctionalOption.СтандартныеПодсистемыВАвтономномРежиме</functionalOptions>
@@ -1295,6 +1298,7 @@
   <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
   <catalogs>Catalog.УчетныеЗаписиЭлектроннойПочты</catalogs>
   <catalogs>Catalog.Файлы</catalogs>
+  <documents>Document.ГПА_РемонтыАттракционов</documents>
   <documents>Document.ПланированиеОтсутствия</documents>
   <documents>Document.ПосещениеАттракциона</documents>
   <documents>Document.ПродажаБилета</documents>

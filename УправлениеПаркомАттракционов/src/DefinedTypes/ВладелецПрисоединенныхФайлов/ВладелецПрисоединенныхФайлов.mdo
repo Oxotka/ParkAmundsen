@@ -10,7 +10,8 @@
   </synonym>
   <type>
     <types>CatalogRef.ПапкиФайлов</types>
-    <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
     <types>DocumentRef.ПродажаБилета</types>
+    <types>DocumentRef.ГПА_РемонтыАттракционов</types>
+    <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
   </type>
 </mdclass:DefinedType>

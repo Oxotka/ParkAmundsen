@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9348ec8a-9bd5-4415-849c-f95d9301caed">
+  <producedTypes>
+    <objectType typeId="ab17fa69-7796-4d29-a4d3-612bd737f454" valueTypeId="535f402f-f0df-41cc-9eed-0d405988add4"/>
+    <refType typeId="e1e5f341-a698-4ac3-aed1-1440be529065" valueTypeId="763acc05-2812-470f-852b-a409d2837cd6"/>
+    <selectionType typeId="49a45b88-4e55-47b9-ba8b-e7343107dc4e" valueTypeId="063bc5d9-3ab9-4be4-a72a-c7ba25de7b1c"/>
+    <listType typeId="48c355cb-f9ab-4914-babd-145ab64fbb76" valueTypeId="6695f554-6506-4992-b41b-781614cc0c9c"/>
+    <managerType typeId="6fdb63f0-fa0a-4c1c-990f-aba20897fcb3" valueTypeId="333f3f2d-099c-4e09-9e1d-b4d1a015f3e3"/>
+  </producedTypes>
+  <name>ГПА_РемонтыАттракционов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ремонты аттракционов (ГПА)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ГПА_РемонтыАттракционов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ГПА_РемонтыАттракционов.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ГПА_РемонтыАттракционов.Form.ФормаСписка</defaultListForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="154f5cb2-438e-4777-a235-556daed44241">
+    <name>Аттракцион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аттракцион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Аттракционы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d3850d84-4729-4ec2-ab24-ecd3bd37a699">
+    <name>ДатаРемонтаПланируемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ремонта планируемая</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="af395e4b-af58-4d1a-81bd-56b6d4ff999a">
+    <name>ДатаРемонтаФактическая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ремонта фактическая</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7e43c54e-fdf9-4f2e-b01f-fbca1122cb1c">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2dc1f1f2-00fc-47fe-8d3c-a7ff70b5b3d7">
+    <name>Техник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Техник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9714fa71-366f-4c60-a259-5336aea2c78a">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9d6ce37a-73a5-4cc9-989d-64449918d33c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="08badbbe-3b91-4207-a1bc-b7395c4485de">
+    <name>ПФ_MXL_Ремонт</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф MXL ремонт</value>
+    </synonym>
+  </templates>
+</mdclass:Document>

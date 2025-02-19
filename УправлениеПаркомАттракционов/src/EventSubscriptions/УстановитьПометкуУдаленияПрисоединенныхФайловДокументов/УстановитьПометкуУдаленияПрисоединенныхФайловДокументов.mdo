@@ -7,6 +7,7 @@
   </synonym>
   <source>
     <types>DocumentObject.ПродажаБилета</types>
+    <types>DocumentObject.ГПА_РемонтыАттракционов</types>
   </source>
   <event>BeforeWrite</event>
   <handler>CommonModule.РаботаСФайлами.УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</handler>
